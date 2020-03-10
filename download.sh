@@ -5,6 +5,8 @@ set -e
 # and customized Arch Linux system.
 # Copyright (C) 2018 picodotdev
 
+VERSION=0.0.2
+
 rm -f alis.conf
 rm -f alis.sh
 rm -f alis-asciinema.sh
@@ -15,15 +17,14 @@ rm -f alis-recovery.sh
 rm -f alis-recovery-asciinema.sh
 rm -f alis-recovery-reboot.sh
 
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis.conf
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-asciinema.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-reboot.sh
-
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery.conf
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery-asciinema.sh
-wget https://raw.githubusercontent.com/picodotdev/alis/master/alis-recovery-reboot.sh
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis.conf"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis.sh"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis-asciinema.sh"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis-reboot.sh"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis-recovery.conf"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis-recovery.sh"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis-recovery-asciinema.sh"
+wget "https://cdn.jsdelivr.net/gh/devzeebo/alis@$VERSION/alis-recovery-reboot.sh"
 
 chmod +x alis.sh
 chmod +x alis-asciinema.sh
