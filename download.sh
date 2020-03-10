@@ -5,7 +5,7 @@ set -e
 # and customized Arch Linux system.
 # Copyright (C) 2018 picodotdev
 
-VERSION=0.0.2
+VERSION=0.0.3
 
 rm -f alis.conf
 rm -f alis.sh
